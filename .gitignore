@@ -1,3 +1,7 @@
 # analytics_data/your-service-account-key.json
 *.json
 *.csv
+analytics_data/venv/
+venv/
+pycache/
+*.pyc
