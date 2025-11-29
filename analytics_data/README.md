@@ -53,7 +53,7 @@ Google Analyticsの管理画面にログインし、データを取得したい�
 スクリプト（ga4_daily_report.py）とダウンロードしたJSONキーファイルが、同じフォルダ内に配置されていることを確認してください。
 
 utility/<br>
-│   ├── analytics_data/
+│   ├── analytics_data/ <br>
 │   │   ├── venv/                          # 仮想環境フォルダ<br>
 │   │   ├── ga4_daily_report.py            # このPythonスクリプト<br>
 │   │   ├── your-service-account-key.json  # ダウンロードしたJSONキー (★ファイル名を合わせてください) <br>
