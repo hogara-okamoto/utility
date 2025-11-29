@@ -37,13 +37,13 @@ JSONファイルが自動的にダウンロードされます。 これが秘密
 
 ## ステップ 2: Google Analytics 4 (GA4) 側での権限付与
 
-サービスアカウントに、GA4プロパティのデータへのアクセス権を与えます。
-Google Analyticsの管理画面にログインし、データを取得したいプロパティを開きます。
-画面左下の [管理] (歯車アイコン) をクリックします。
-プロパティ列にある [プロパティのアクセス管理] をクリックします。
-画面右上の青い [+] ボタンをクリックし、[ユーザーを追加] を選択します。
-メールアドレスを入力: ステップ1で作成したサービスアカウントのメールアドレス（例: ga4-reporter@your-project-id.iam.gserviceaccount.com）をコピー＆ペーストします。
-役割（ロール）を選択: [閲覧者] (Viewer) を選択します。
+サービスアカウントに、GA4プロパティのデータへのアクセス権を与えます。<br>
+Google Analyticsの管理画面にログインし、データを取得したいプロパティを開きます。<br>
+画面左下の [管理] (歯車アイコン) をクリックします。<br>
+プロパティ列にある [プロパティのアクセス管理] をクリックします。<br>
+画面右上の青い [+] ボタンをクリックし、[ユーザーを追加] を選択します。<br>
+メールアドレスを入力: ステップ1で作成したサービスアカウントのメールアドレス（例: ga4-reporter@your-project-id.iam.gserviceaccount.com）をコピー＆ペーストします。<br>
+役割（ロール）を選択: [閲覧者] (Viewer) を選択します。<br>
 [追加] ボタンをクリックします。
 
 ## ステップ 3: Python環境とスクリプトの設定
@@ -52,10 +52,10 @@ Google Analyticsの管理画面にログインし、データを取得したい�
 
 スクリプト（ga4_daily_report.py）とダウンロードしたJSONキーファイルが、同じフォルダ内に配置されていることを確認してください。
 
-utility/
-└── analytics_data/
-    ├── venv/                       # 仮想環境フォルダ
-    ├── ga4_daily_report.py         # このPythonスクリプト
+utility/<br>
+└── analytics_data/<br>
+    ├── venv/                       # 仮想環境フォルダ<br>
+    ├── ga4_daily_report.py         # このPythonスクリプト<br>
     └── your-service-account-key.json # ダウンロードしたJSONキー (★ファイル名を合わせてください)
 
 
@@ -78,10 +78,10 @@ pip install google-analytics-data
 
 ga4_daily_report.py ファイルを開き、以下の「設定パラメータ」をあなたの環境に合わせて修正します。
 
---- 設定パラメータ ---
-PROPERTY_ID = "509200578"  # <--- あなたのGA4プロパティID（数字のみ）
-START_DATE = "2025-11-01"  # <--- 取得開始日 (例: "2025-11-01")
-END_DATE = "2025-11-30"    # <--- 取得終了日 (例: "2025-11-30")
+--- 設定パラメータ --- <br>
+PROPERTY_ID = "509200578"  # <--- あなたのGA4プロパティID（数字のみ）<br>
+START_DATE = "2025-11-01"  # <--- 取得開始日 (例: "2025-11-01") <br>
+END_DATE = "2025-11-30"    # <--- 取得終了日 (例: "2025-11-30") <br>
 
 ### カスタムディメンションの場合、GA4管理画面で登録した名前の前に 'customEvent:' を付けます。
 TARGET_DIMENSION_KEY = "customEvent:selected_language" 
@@ -95,7 +95,7 @@ KEY_FILE_NAME = "your-service-account-key.json" # <--- ★ダウンロードし�
 
 ## ステップ 4: スクリプトの実行
 
-仮想環境がアクティブな状態で、スクリプトを実行します。
+仮想環境がアクティブな状態で、スクリプトを実行します。<bt>
 python ga4_daily_report.py
 
 実行後、ga4_daily_report_pivot.csv というファイルが同じフォルダ内に生成されます。
