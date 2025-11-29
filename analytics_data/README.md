@@ -55,7 +55,7 @@ Google Analyticsの管理画面にログインし、データを取得したい�
 utility/<br>
 │   ├── analytics_data/ <br>
 │   │   ├── venv/                          # 仮想環境フォルダ<br>
-│   │   ├── ga4_daily_report.py            # このPythonスクリプト<br>
+│   │   ├── ga4_report.py            # このPythonスクリプト<br>
 │   │   ├── your-service-account-key.json  # ダウンロードしたJSONキー (★ファイル名を合わせてください) <br>
 │   │   └── README.md
 
