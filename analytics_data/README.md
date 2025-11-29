@@ -1,12 +1,12 @@
-# GA4日別レポート抽出ツール (アクティブユーザー数とカスタムディメンション内訳)
+# GA4日別レポート抽出ツール <br>(アクティブユーザー数とカスタムディメンション内訳)
 
 このPythonスクリプトは、Google Analytics Data API (GA4) を使用し、指定した期間の日別アクティブユーザー数と、カスタム定義されたディメンション（言語など）ごとのイベント数をピボット形式のCSVファイルとして抽出します。
 
-🚀 動作環境
-Python 3.8以上
+🚀 動作環境<br>
+Python 3.8以上<br>
 google-analytics-data クライアントライブラリ
 
-📝 セットアップ手順
+📝 セットアップ手順<br>
 このツールを利用するには、以下の3つの主要なステップが必要です。
 
 ## ステップ 1: Google Cloud Platform (GCP) での認証設定
@@ -53,10 +53,11 @@ Google Analyticsの管理画面にログインし、データを取得したい�
 スクリプト（ga4_daily_report.py）とダウンロードしたJSONキーファイルが、同じフォルダ内に配置されていることを確認してください。
 
 utility/<br>
-└── analytics_data/<br>
-    ├── venv/                       # 仮想環境フォルダ<br>
-    ├── ga4_daily_report.py         # このPythonスクリプト<br>
-    └── your-service-account-key.json # ダウンロードしたJSONキー (★ファイル名を合わせてください)
+│   ├── analytics_data/
+│   │   ├── venv/                          # 仮想環境フォルダ<br>
+│   │   ├── ga4_daily_report.py            # このPythonスクリプト<br>
+│   │   ├── your-service-account-key.json  # ダウンロードしたJSONキー (★ファイル名を合わせてください) <br>
+│   │   └── README.md
 
 
 ### 2.仮想環境の作成とライブラリのインストール
